@@ -26,7 +26,7 @@ while (r <= y)
 {
 c = 1;
 while (c <= x)
-    {
+{
 if ((c == 1 && r == 1) || (c == 1 && r == y))
 ft_putchar(head);
 else if ((c == x && r == 1) || (c == x && r == y))
