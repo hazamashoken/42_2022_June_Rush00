@@ -20,7 +20,7 @@ void    rush(int x, int y)
                 ft_putchar('A');
             else if ((i == x && j == 1) || (i == x && j == y))
                 ft_putchar('C');
-            else if ((i > 1 && j == 1) || (i > 1 && j == y))
+            else if ((i > 1 && j == 1) || (i > 1 && j == y) || (i = 1 && j > 1) || (i = x && j > 1))
                 ft_putchar('B');
             else
                 ft_putchar(' ');
