@@ -1,6 +1,7 @@
 void	ft_putchar(char c);
 
 void    rush(int x, int y)
+.delare
 {
     int count_horizon;
     int count_vertical;
