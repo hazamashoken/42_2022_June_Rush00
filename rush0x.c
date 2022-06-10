@@ -20,7 +20,7 @@ void    rush(int x, int y)
             else if ((count_horizon > 1 && count_vertical == 1) || (count_horizon > 1 && count_vertical == y))
                 ft_putchar('B');
             else if ((count_horizon == 1 && count_vertical > 1) || (count_horizon == x && count_vertical < y))
-                ft_putchar('O');
+                ft_putchar('B');
             else
                 ft_putchar(' ');
             count_horizon++;
