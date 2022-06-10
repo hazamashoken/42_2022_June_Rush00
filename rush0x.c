@@ -26,7 +26,7 @@ void    rush(int x, int y)
                 ft_putchar(' ');
             i += 1;
         }
-        ft_putchar("/n");
+        ft_putchar('\n');
         j += 1;
     }
 }
