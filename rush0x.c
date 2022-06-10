@@ -4,30 +4,28 @@ void	ft_putchar(char c);
 #define tail 'C'
 void    rush(int x, int y)
 {
-    int column;
-    int row;
+    int c;
+    int r;
 
     if (x == 0 || y == 0)
         return ;
-    row = 1;
-    while (row <= y)
+    r = 1;
+    while (r <= y)
     {
-        column = 1;
-        while (column <= x)
+        c = 1;
+        while (c <= x)
         {
-            if ((column == 1 && row == 1) || (column == 1 && row == y))
+            if ((c == 1 && r == 1) || (c == 1 && r == y))
                 ft_putchar(head);
-            else if ((column == x && row == 1) || (column == x && row == y))
+            else if ((c == x && r == 1) || (c == x && r == y))
                 ft_putchar(tail);
-            else if ((column > 1 && row == 1) || (column > 1 && row == y))
-                ft_putchar(between);
-            else if ((column == 1 && row > 1) || (column == x && row < y))
+            else if ((c > 1 && r == 1) || (c > 1 && r == y) || (c == 1 && r > 1) || (c == x && r < y))
                 ft_putchar(between);
             else
                 ft_putchar(' ');
-            column++;
+            c++;
         }
         ft_putchar('\n');
-        row++;
+        r++;
     }
 }
