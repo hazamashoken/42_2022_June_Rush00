@@ -8,7 +8,7 @@ void    rush(int x, int y)
 
     count = 1;
 
-    if (x = 0 || y = 0)
+    if (x == 0 || y == 0)
         return ;
     j = 1;
     while (j <= y)
@@ -26,7 +26,7 @@ void    rush(int x, int y)
                 ft_putchar(' ');
             i += 1;
         }
-        ft_putchar('/n');
+        ft_putchar("/n");
         j += 1;
     }
 }
