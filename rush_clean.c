@@ -1,14 +1,26 @@
-void	ft_putchar(char c);
-#define head 'A'
-#define between 'B'
-#define tail 'C'
-void    rush(int x, int y)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   rush_clean.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rpatomwo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/06/10 16:18:50 by rpatomwo          #+#    #+#             */
+/*   Updated: 2022/06/10 16:29:21 by rpatomwo         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+#define HEAD 'A'
+#define BETWEEN 'B'
+#define TAIL 'C'
+
+void	ft_putchar(char c)
+void	rush(int x, int y)
 {
-    int c;
-    int r;
+	int c;
+       	int r;
 
     if (x == 0 || y == 0)
-        return ;
+        return;
     r = 1;
     while (r <= y)
     {
