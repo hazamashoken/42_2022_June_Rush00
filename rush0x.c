@@ -1,35 +1,33 @@
 void	ft_putchar(char c);
-#define topleft 'A'
-#define topright 'C'
-#define bottomleft 'A'
-#define bottomright 'C'
+#define head 'A'
 #define between 'B'
+#define end 'C'
 void    rush(int x, int y)
 {
-    int count_horizon;
-    int count_vertical;
+    int column;
+    int row;
 
     if (x == 0 || y == 0)
         return ;
-    count_vertical = 1;
-    while (count_vertical <= y)
+    row = 1;
+    while (row <= y)
     {
-        count_horizon = 1;
-        while (count_horizon <= x)
+        column = 1;
+        while (column <= x)
         {
-            if ((count_horizon == 1 && count_vertical == 1) || (count_horizon == 1 && count_vertical == y))
-                ft_putchar(topleft);
-            else if ((count_horizon == x && count_vertical == 1) || (count_horizon == x && count_vertical == y))
-                ft_putchar('C');
-            else if ((count_horizon > 1 && count_vertical == 1) || (count_horizon > 1 && count_vertical == y))
-                ft_putchar('B');
-            else if ((count_horizon == 1 && count_vertical > 1) || (count_horizon == x && count_vertical < y))
-                ft_putchar('B');
+            if ((column == 1 && row == 1) || (column == 1 && row == y))
+                ft_putchar(head);
+            else if ((column == x && row == 1) || (column == x && row == y))
+                ft_putchar(tail);
+            else if ((column > 1 && row == 1) || (column > 1 && row == y))
+                ft_putchar(between);
+            else if ((column == 1 && row > 1) || (column == x && row < y))
+                ft_putchar(between);
             else
                 ft_putchar(' ');
-            count_horizon++;
+            column++;
         }
         ft_putchar('\n');
-        count_vertical++;
+        row++;
     }
 }
