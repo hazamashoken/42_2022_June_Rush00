@@ -17,16 +17,16 @@ void    rush(int x, int y)
         while (i <= x)
         {
             if ((i == 1 && j == 1) || (i == 1 && j == y))
-                ft_putchar('A')
+                ft_putchar('A');
             else if ((i == x && j == 1) || (i == x && j == y))
-                ft_putchar('C')
+                ft_putchar('C');
             else if ((i > x && j == 1) || (i > x && j == y))
-                ft_putchar('B')
+                ft_putchar('B');
             else
-                ft_putchar(' ')
+                ft_putchar(' ');
             i += 1;
         }
-        ft_putchar('/n')
+        ft_putchar('/n');
         j += 1;
     }
 }
