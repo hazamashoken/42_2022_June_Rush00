@@ -19,7 +19,7 @@ void    rush(int x, int y)
                 ft_putchar('C');
             else if ((count_horizon > 1 && count_vertical == 1) || (count_horizon > 1 && count_vertical == y))
                 ft_putchar('B');
-            else if ((count_horizon = 1 && count_vertical < y && count_vertical > 1) || (count_horizon = x && count_vertical < y && count_vertical < y))
+            else if ((count_horizon == 1 && count_vertical > 1) || (count_horizon == x && count_vertical < y))
                 ft_putchar('O');
             else
                 ft_putchar(' ');
