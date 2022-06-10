@@ -29,4 +29,5 @@ void    rush(int w, int h)
     ft_putchar(10); // \n
     a++;
   }
+  ft_putchar(10); // \n
 }
