@@ -4,61 +4,48 @@ we are in this together
 
 When we stand together 
 
-One more depending on a prayer
-And we all look away
-People pretending everywhere
-It's just another day
-There's bullets flying through the air
-And they still carry on
-We watch it happen over there
-And then just turn it off
-Hey, yeah, yeah, hey, yeah
-We must stand together
-Hey, yeah, yeah, hey, yeah
-There's no giving in
-Hey, yeah, yeah, hey, yeah
-A hand in hand forever
-Hey, yeah, yeah, hey, yeah
-That's when we all win
-Hey, yeah, yeah, hey, yeah
-That's, that's, that's when we all win
-That's, that's, that's when we all win
-They tell us everything's alright
-And we just go along
-How can we fall asleep at night
-When something's clearly wrong?
-When we could feed a starving world
-With what we throw away
-But all we serve are empty words
-That always taste the same
-Hey, yeah, yeah, hey, yeah
-We must stand together
-Hey, yeah, yeah, hey, yeah
-There's no giving in
-Hey, yeah, yeah, hey, yeah
-A hand in hand forever
-Hey, yeah, yeah, hey, yeah
-That's when we all win
-Hey, yeah, yeah, hey, yeah
-That's, that's, that's when we all win
-Hey, yeah, yeah, hey, yeah
-That's, that's, that's when we all win
-The right thing to guide us
-Is right here inside us
-No one can divide us
-When the light is nearly gone
-But just like a heartbeat
-The drumbeat carries on
-And the drumbeat carries on
-(Just like a heart beat)
-Hey, yeah, yeah, hey, yeah
-We must stand together
-Hey, yeah, yeah, hey, yeah
-There's no giving in
-Hey, yeah, yeah, hey, yeah
-A hand in hand forever
-Hey, yeah, yeah, hey, yeah
-That's when we all win
-Hey, yeah, yeah, hey, yeah
-That's, that's, that's when we all win
-That's, that's, that's when we all win
+
+Files to submit: main.c, ft_putchar.c and your rush0X.c, ’0X’ represents the
+rush number. For example rush00.c.
+• Example of main.c:
+```
+int main()
+{
+rush(5, 5);
+return (0);
+}
+```
+• You must therefore create the function rush taking two variables of type int as
+arguments, named respectively x and y.
+• Your function rush should display (on-screen) a rectangle of x characters for width,
+and y characters for length.
+• Your function should never crash or loop indefinitely.
+• Your main will be modified during defense, to check if you’ve handled everything
+you’re supposed to. Here’s an example of test we’ll perform:
+```
+int main()
+{
+rush(123, 42);
+return (0);
+}
+```
+
+There are 5 variation of main.c hence dir Rush00 to Rush04
+
+This is how to find what variation your group will be doing:
+
+Take the first letter of the login of your team leader, convert it to a number following this rule:
+A = 1
+B = 2
+C = 3
+D = 4
+...
+
+then your subject is the number you got modulo 5, so :
+1 % 5 = 1 (your subject is 1)
+2 % 5 = 2 (your subject is 2)
+3 % 5 = 3 (your subject is 3)
+4 % 5 = 4 (your subject is 4)
+5 % 5 = 0 (your subject is 0)
+6 % 5 = 1 (your subject is 1)
+...
