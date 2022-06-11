@@ -2,7 +2,7 @@
 
 void    ft_print(int a, int b, int w, int h)
 {
-  if ((a == 0 && b == 0) || (a == h - 1 && b == w - 1 && a != h - 1))
+  if ((a == 0 && b == 0) || (w > 1 && a == h - 1 && b == w - 1))
     ft_putchar(65); // A
   else if ((a == 0 && b == w - 1) || (a == h - 1 && b == 0))
     ft_putchar(67); // C
@@ -26,8 +26,7 @@ void    rush(int w, int h)
       ft_print(a, b, w, h);
       b++;
     }
-    ft_putchar(10); // \n
+    ft_putchar(10);
     a++;
   }
-  ft_putchar(10); // \n
 }
