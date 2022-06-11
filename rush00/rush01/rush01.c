@@ -80,11 +80,11 @@ void    rush(int column, int row)
     {
         print_top(column);
     }
-    if (row > 1)
+    if (row > 2)
     {
         print_middle(column, row);
     }
-    if (row > 2)
+    if (row >= 2)
     {
         print_bottom(column);
     }
