@@ -7,4 +7,4 @@ int main ()
   rush(4, 2);
   rush(1, 5);
   return (0);
-}
+}}
