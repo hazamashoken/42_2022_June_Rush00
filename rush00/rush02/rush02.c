@@ -1,8 +1,10 @@
 #include "ft_putchar.c"
 
 /*
-@breif			print out top 'o----o' and bottom part of the box
+@breif			print out top 'ABBBBA' and bottom 'CBBBBC' part of the box
 @param	int	w	width of the box
+@param	int	h	height of the box
+@param	int	hi	current height when outputing box
 @return	void
 */
 void	ft_topbot(int w, int h, int hi)
@@ -26,13 +28,13 @@ void	ft_topbot(int w, int h, int hi)
 }
 
 /*
-@brief			print wall '|'  and blank ' ' for the box body
+@brief			print wall 'B'  and blank ' ' for the box body
 @param	int	w	width of the box
 @return void
 */
 void	ft_wall(int w)
 {
-	int	i;
+	int	i;'
 
 	i = 1;
 	while (i <= w)
