@@ -1,32 +1,32 @@
 #include "ft_putchar.c"
 
-void    ft_print(int a, int b, int w, int h)
+void    ft_print(int x, int y, int w, int h)
 {
-  if ((a == 0 && b == 0) || (w > 1 && a == h - 1 && b == w - 1))
-    ft_putchar(65); // A
-  else if ((a == 0 && b == w - 1) || (a == h - 1 && b == 0))
-    ft_putchar(67); // C
-  else if ((a == 0 || a == h - 1) || (b == 0 || b == w - 1))
-    ft_putchar(66); // B
+  if ((y == 0 && x == 0) || (w > 1 && y == h - 1 && x == w - 1))
+    ft_putchar(65);
+  else if ((y == 0 && x == w - 1) || (y == h - 1 && x == 0))
+    ft_putchar(67);
+  else if ((y == 0 || y == h - 1) || (x == 0 || x == w - 1))
+    ft_putchar(66);
   else
-    ft_putchar(32); // [space]
+    ft_putchar(32);
 }
 
 void    rush(int w, int h)
 {
-  int a;
-  int b;
+  int x;
+  int y;
 
-  a = 0;
-  while (a < h)
+  y = 0;
+  while (y < h)
   {
-    b = 0;
-    while (b < w)
+    x = 0;
+    while (x < w)
     {
-      ft_print(a, b, w, h);
-      b++;
+      ft_print(x, y, w, h);
+      x++;
     }
     ft_putchar(10);
-    a++;
+    y++;
   }
 }
